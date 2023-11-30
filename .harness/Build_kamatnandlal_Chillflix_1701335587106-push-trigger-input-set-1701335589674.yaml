@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_kamatnandlal_Chillflix_1701335587106-push-trigger-input-set
+  identifier: Build_kamatnandlal_Chillflix_1701335587106pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: p1
+  pipeline:
+    identifier: Build_kamatnandlal_Chillflix_1701335587106
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
