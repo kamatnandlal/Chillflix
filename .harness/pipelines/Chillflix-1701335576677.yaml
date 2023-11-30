@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_kamatnandlal_Chillflix_1701335587106
+  name: Build Chillflix
+  orgIdentifier: default
+  projectIdentifier: p1
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: kamatnandlal/Chillflix
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
