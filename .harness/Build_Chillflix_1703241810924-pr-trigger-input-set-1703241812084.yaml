@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Chillflix_1703241810924-pr-trigger-input-set
+  identifier: Build_Chillflix_1703241810924prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: project_2nd
+  pipeline:
+    identifier: Build_Chillflix_1703241810924
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
